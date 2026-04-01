@@ -1,0 +1,12 @@
+{
+  "python.defaultInterpreterPath": "/Users/aarnavgopinath/nba-player-ml/venv/bin/python3",
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "terminal.integrated.env.osx": {
+    "PATH": "/Users/aarnavgopinath/nba-player-ml/venv/bin:${env:PATH}",
+    "VIRTUAL_ENV": "/Users/aarnavgopinath/nba-player-ml/venv"
+  },
+  "jupyter.kernels.excludePythonEnvironments": [],
+  "jupyter.jupyterServerType": "local",
+  "jupyter.notebookFileRoot": "${workspaceFolder}"
+}
