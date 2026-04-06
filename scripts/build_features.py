@@ -26,13 +26,13 @@ df = df.sort_values(by=['player_id', 'date'])
 # Rolling Features (last 5 games)
 # -------------------------
 df['last5_minutes'] = (
-    df.groupby('player_id')['minutes']
-    .transform(lambda x: x.rolling(5, min_periods=1).mean())
+    df.groupby('Player_ID')['minutes']
+    .transform(lambda x: x.shift(1).rolling(5, min_periods=1).mean())
 )
 
 df['last5_points'] = (
-    df.groupby('player_id')['points']
-    .transform(lambda x: x.rolling(5, min_periods=1).mean())
+    df.groupby('Player_ID')['points']
+    .transform(lambda x: x.shift(1).rolling(5, min_periods=1).mean())
 )
 
 # -------------------------
